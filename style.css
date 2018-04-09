@@ -1,0 +1,90 @@
+body{
+	background-image: url(img/BG.png);
+}
+
+.container{
+	position: absolute;
+	width: 320px;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color:  #000000;
+	box-sizing: border-box;
+	background-color:  #1f1f1f;
+	box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color:  rgba(0, 0, 0, 0.6);
+	background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+	background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+	background: -o-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+	background: -ms-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
+	color: white;
+}
+
+.header__headline{
+	color:  #bfbfbf;
+	font-size: 20px;
+	line-height: 22px;
+	text-align: center;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.8);
+	padding: 10px 0px;
+	margin: 0px;
+}
+
+.main{
+	
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color:  #000000;
+	box-sizing: border-box;
+	background-color:  #1f1f1f;
+	box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2);
+	padding: 0px 15px 20px 15px;;
+}
+
+.main__select{
+	background-color:  #141414;
+	color: #bfbfbf;
+}
+
+.main__input{
+	background-color:  #141414;
+	color: #bfbfbf;
+	border: none;
+	padding: 3px 0px;
+}
+
+.main__input:focus{
+	outline-offset: inherit;
+	outline: inherit;
+}
+
+.main__label{
+	color:  #bfbfbf;
+	font-weight: 700;
+}
+
+.main__headline{
+	font-size: 22px;
+	margin-bottom: 12px;
+	color:  #7d7d7d;
+}
+
+.main__error{
+	margin: 0px;
+	height: 14px;
+	color:  #bfbfbf;
+}
