@@ -42,7 +42,10 @@ class Units{
 
 function validation(){
 	try{
-		if(isNaN(inputValue.value)){
+		if(inputValue.value.length ===0){
+		   throw "";
+		}
+		else if(isNaN(inputValue.value)){
 			throw "Wpisana wartość nie jest liczbą";
 		}
 		else if(inputValue.value < 0){
@@ -65,6 +68,7 @@ function finalResult(){
 }
 
 function messageException(err){
+	outputValue.value = "";
 	errorMessage.textContent = err;
 }
 
