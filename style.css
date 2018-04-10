@@ -71,7 +71,7 @@ body{
 	background-color:  #141414;
 	color: #bfbfbf;
 	border: none;
-	padding: 10px 0px;
+	padding: 8px 0px;
 }
 
 .main__input:focus{
@@ -99,9 +99,13 @@ body{
 
 @media only screen and (min-width: 400px) {
 	.main{
-		display: block;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 		width: 100%;
 		box-sizing: border-box;
+		align-items: baseline;
+		justify-content: space-between;
 	}
 	
 	.container{
@@ -110,11 +114,21 @@ body{
 	}
 	
 	.main__headline{
+		flex-basis: 100%;
 		margin-bottom: 5px;
 		color:  #7d7d7d;
 	}
 	
 	.main__select{
 		font-size: 16px;
+	}
+	
+	.main__input{
+		margin-left: 5px;
+		flex: 1;
+	}
+	
+	.main__input{
+		padding: 6px 0px;
 	}
 }
