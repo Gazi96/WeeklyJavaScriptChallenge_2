@@ -40,11 +40,7 @@ class Units{
 	}
 }
 
-inputUnits.addEventListener('change', Validation, false);
-outputUnits.addEventListener('change', Validation, false);
-inputValue.addEventListener('input', Validation);
-
-function Validation(){
+function validation(){
 	try{
 		if(isNaN(inputValue.value)){
 			throw "Wpisana wartość nie jest liczbą";
@@ -71,6 +67,10 @@ function finalResult(){
 function messageException(err){
 	errorMessage.textContent = err;
 }
+
+inputUnits.addEventListener('change', validation, false);
+outputUnits.addEventListener('change', validation, false);
+inputValue.addEventListener('input', validation);
 
 
 
