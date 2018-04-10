@@ -72,6 +72,7 @@ body{
 	color: #bfbfbf;
 	border: none;
 	padding: 8px 0px;
+	font-size: 18px;
 }
 
 .main__input:focus{
